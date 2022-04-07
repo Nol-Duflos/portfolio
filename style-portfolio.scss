@@ -1,0 +1,40 @@
+body {
+    background-color: #2E2A32;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5.6em;
+    color: #179DA1;
+    text-shadow: 5px 5px #FFA644;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #444047;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+.titre-sous-titre {
+}
+
+header {
+    background-color: #fff;
+    max-width: 100%;
+    padding: 0 15%;
+    display: flex;
+}
+
+section {
+    background-color: #2E2A32;
+}
+
+nav {
+    position: fixed;
+}
+
+.pp {
+    position: absolute;
+}

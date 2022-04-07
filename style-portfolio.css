@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 15%;
+    grid-gap: 20px ;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+  background-color: #2E2A32;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5em;
+  color: #179DA1;
+  text-shadow: 5px 5px #FFA644;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: #444047;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+header {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 0 15%;
+  display: flex;
+}
+
+section {
+  background-color: #2E2A32;
+}
+
+.navigation {
+    position: fixed;
+    font-size: 25px;
+
+}
+
+/*Navigation fixé*/
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 0;
+
+    /*a disposer autrement plus tard*/
+
+    margin-top: 56%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.pp {
+  position: absolute;
+  margin: 100px auto auto 60%;
+}/*# sourceMappingURL=style-portfolio.css.map */
+
+.pres-texte {
+    color: #fff;
+    grid-column-start: 1;
+}
