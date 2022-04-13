@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b0162d0160.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fcbfb74e2.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style-portfolio.css"/>
 </head>
@@ -12,7 +12,7 @@
 
     <img src="vraie-pp.png" class="pp"/>
 
-    <header>
+    <header id="header">
         <div class="titre-sous-titre">
             <h2>UX UI designer | Webdesigner</h2>
             <h1>NOLWENN DUFLOS</h1>
@@ -22,62 +22,165 @@
     <main class="grid">
         <nav class="navigation">
             <ul>
-                <li><a href="#" class="b1">À propos</a></li>
-                <li><a href="#" class="b2">Curriculum</a></li>
-                <li><a href="#" class="b3">UI/UX</a></li>
-                <li><a href="#" class="b4">Intégration Web</a></li>
-                <li><a href="#" class="b5">Contact</a></li>
+                <li><a href="#header" class="bnav b1">À propos</a></li>
+                <li><a href="#curriculum" class="bnav b2">Curriculum</a></li>
+                <li><a href="#uiux" class="bnav b3">UI/UX</a></li>
+                <li><a href="#integration" class="bnav b4">Intégration Web</a></li>
+                <li><a href="#contact" class="bnav b5">Contact</a></li>
             </ul>
         </nav>
-<<<<<<< HEAD
-        <article class="pres">
-            <div class="pres-texte">
-                <p>Designer confirmé et Développeur Front junior situé à Lille, 
-                    je suis passionnée de storytelling et toujours motivé pour créer des sites durables et centrés sur l’utilisateur.
-                </p>
-            </div>
-            <div class="boutons-cv">
-=======
-        <section class="section-vide">
+        <section class="section-vide section-grid" id="propos">
 
             <article class="pres">
                 <div class="pres-texte">
-                    <p>Designer confirmé et Développeur Front junior situé à Lille, 
+                    <p>Designer confirmée et Intégrateur web junior situé à Lille, 
                         je suis passionnée de storytelling et toujours motivé pour créer des sites durables et centrés sur l’utilisateur.
                     </p>
                 </div>
->>>>>>> 7c4777392b08b704bc6fe0b50b10b9f360e6b0f5
-                <button class="secondaire"><i class="fa-light fa-eye"></i>Voir mon CV</button>
-                <button class="cta"><i class="fa-light fa-arrow-down-to-bracket"></i>Télécharger mon CV</button>
-            </div>
-        </article>
-        <section class="competences">
-            <article>
-                <div class="diplomes">
-                    <h3>Diplômes et certifications</h3>
-                </div>
-                <div>
-                    <h3>Experiences professionnelles</h3>
+                <!--<button class=" secondaire">Voir mon CV</button>-->
+                <div class="range-boutons">
+                    <a href="#" class="reseaux"><i class="fa-brands fa-behance-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <button class="cta boutons">Télécharger mon CV</button>
                 </div>
             </article>
-            <article>
-                
-            </article>
+        
+
         </section>
-        <section class="section-vide">
+        <section class="section-vide" id="curriculum">
             <p>Ceci est la partie CV</p>
+
+            <article class="diplomes">
+                <h3 class="titrescv">Diplômes et certifications</h3>
+            </article>
+
+            <article class="experience">
+                <h3 class="titrescv">Experiences professionnelles</h3>
+            </article>
+
+            <article class="logiciels">
+                <h3 class="titrescv">logiciels</h3>
+            </article>
+
+            <article class="languages">
+                <h3 class="titrescv">languages informatiques</h3>
+            </article>
+            <button class="cta btncv boutons">Télécharger mon CV</button>
         </section>
 
-        <section class="section-vide">
-            <p>Ceci est la partie UX UI</p>
+        <section class="section-vide" id="uiux">
+
+            <article class="projet projet1">
+                <h3>Mad JDR | E-commerce</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel1.png"/></a>
+                </div>
+            </article>
+
+            <article class="projet projet2">
+                <h3>Inkverse | Application</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel2.png"/>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projet projet3">
+                <h3>Qual-IT | E-commerce</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel3.png"/>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projet projet4">
+                <h3>Apix | E-commerce</h3>
+                <div class="cartel-projet">
+                    <div class="hover-image">
+                        <button class="details">Découvrir les détails du projet</button>
+                    </div>
+                    <a href="#">
+                        <img src="mockup-cartel4.png"/>
+                    </a>
+                </div>
+            </article>
+
         </section>
 
-        <section class="section-vide">
+
+
+        <section class="section-vide" id="integration">
             <p>Ceci est la partie Integration</p>
+
+            <article class="projet projet1">
+                <h3>Site de l'EuraVélo 5</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel1.png"/></a>
+                </div>
+            </article>
+
+            <article class="projet projet2">
+                <h3>Blog Squedrong</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel2.png"/>
+                    </a>
+                </div>
+            </article>
+
+            <article class="projet projet3">
+                <h3>Tailleur Ducsman</h3>
+                <div class="cartel-projet">
+                    <a href="#">
+                        <div class="hover-image">
+                            <button class="details">Découvrir les détails du projet</button>
+                        </div>
+                        <img src="mockup-cartel3.png"/>
+                    </a>
+                </div>
+            </article>
         </section>
 
-        <section class="section-vide">
+        <section class="section-vide" id="contact">
             <p>Ceci est la partie contact</p>
+
+            <article class="contact-area">
+                <form action="#" method="POST">
+                    <p>Prénom et Nom</p>
+                    <label for="nom">
+                      <input type="text" class="contact-input" id="nom" name="nom" placeholder="Votre nom et votre prénom*" tabindex="1">
+                    </label>
+
+                    <p>E-mail</p>
+                    <label for="email">
+                      <input type="email" class="contact-input" id="email" name="email" placeholder="Votre e-mail *" tabindex="2">
+                    </label>
+
+                    <p>Message</p>
+                    <textarea id="message" class="contact-input" name="message" cols="30" rows="6" placeholder="Parlez-moi de votre projet" tabindex="5"></textarea>
+                    <button class="cta" type="submit">Envoyer</button>
+                </form>
+            </article>
         </section>
     </main>
 </body>
