@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7fcbfb74e2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b0162d0160.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style-portfolio.css"/>
 </head>
@@ -22,7 +23,7 @@
     <main class="grid">
         <nav class="navigation">
             <ul>
-                <li><a href="#header" class="bnav b1">À propos</a></li>
+                <li><a href="#header" class="bnav b1 active">À propos</a></li>
                 <li><a href="#curriculum" class="bnav b2">Curriculum</a></li>
                 <li><a href="#uiux" class="bnav b3">UI/UX</a></li>
                 <li><a href="#integration" class="bnav b4">Intégration Web</a></li>
@@ -39,9 +40,9 @@
                 </div>
                 <!--<button class=" secondaire">Voir mon CV</button>-->
                 <div class="range-boutons">
-                    <a href="#" class="reseaux"><i class="fa-brands fa-behance-square"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <i class="fa-brands fa-behance-square"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
                     <button class="cta boutons">Télécharger mon CV</button>
                 </div>
             </article>
@@ -49,14 +50,42 @@
 
         </section>
         <section class="section-vide" id="curriculum">
-            <p>Ceci est la partie CV</p>
 
             <article class="diplomes">
                 <h3 class="titrescv">Diplômes et certifications</h3>
+                <div class="contenu-cv">
+                    <div class="date">
+                        <p>05/2022<i class="fa-solid fa-circle"></i></p>
+                        <p>06/2021<i class="fa-solid fa-circle"></i></p>
+                        <p>09/2019<i class="fa-solid fa-circle"></i></p>
+                        <p>09/2017<i class="fa-solid fa-circle"></i></p>
+                    </div>
+                    <div class="align-right">
+                        <p>Développeur Intégrateur d’Applications Web, Simplon</p>
+                        <p>Formation approfondie UX UI design, Career Foundry</p>
+                        <p>Master 2 Arts Plastiques, UPJV</p>
+                        <p>Diplôme Universitaire Création de BD, UPJV</p>
+                    </div>
+                </div>
             </article>
 
             <article class="experience">
                 <h3 class="titrescv">Experiences professionnelles</h3>
+                <div class="contenu-cv">
+                    <div class="date">
+                        <p>11/2021 - 02/2022<i class="fa-solid fa-circle"></i></p>
+                        <p>09/2020 - 10/2021<i class="fa-solid fa-circle"></i></p>
+                        <p>09-10/2020 <br>
+                            06-07/2021<i class="fa-solid fa-circle"></i></p>
+                    </div>
+                    <div class="align-right">
+                        <p>INSY2S | Designer UI UX | Lille</p>
+                        <p>Designer Freelance</p>
+                        <p>Éditions de la gouttière | Coloriste | Amiens</p>
+                    </div>
+                </div>
+
+
             </article>
 
             <article class="logiciels">
@@ -123,7 +152,6 @@
 
 
         <section class="section-vide" id="integration">
-            <p>Ceci est la partie Integration</p>
 
             <article class="projet projet1">
                 <h3>Site de l'EuraVélo 5</h3>
@@ -162,7 +190,6 @@
         </section>
 
         <section class="section-vide" id="contact">
-            <p>Ceci est la partie contact</p>
 
             <article class="contact-area">
                 <form action="#" method="POST">
@@ -178,10 +205,23 @@
 
                     <p>Message</p>
                     <textarea id="message" class="contact-input" name="message" cols="30" rows="6" placeholder="Parlez-moi de votre projet" tabindex="5"></textarea>
-                    <button class="cta" type="submit">Envoyer</button>
+                    
+                    <div class="boutons-contact">
+
+                        <div class="retour-haut">
+                            <p>Retourner en haut</p>
+                                <button class="btn-rond">
+                                    <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+                                </button>
+                        </div>
+
+                        <button class="cta boutons" type="submit" id="bouton-envoie">Envoyer</button>
+
+                    </div>
                 </form>
             </article>
         </section>
     </main>
+    <script src="portfolio.js"></script>
 </body>
 </html>
