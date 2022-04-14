@@ -70,6 +70,12 @@ header h2 {
 }
 
 .cta {
+  background-color: #2E2A32;
+  border: #179DA1 2px solid;
+  color: #179DA1;
+  transition: all 0.4s ease-in;
+}
+.cta:hover {
   background-color: #179DA1;
   border: #179DA1 2px solid;
   color: #2E2A32;
@@ -87,6 +93,40 @@ header h2 {
   border: none;
 }
 
+.reseaux-btn {
+  background-color: #fff;
+  width: 54px;
+  height: auto;
+  border: none;
+  border-radius: 50%;
+}
+.reseaux-btn:hover {
+  -webkit-animation: pulsation_bouton 0.8s ease-out;
+          animation: pulsation_bouton 0.8s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsation_bouton {
+  from {
+    box-shadow: 0 0 0 -3px hsla(0deg, 0%, 100%, 0), 0 0 0 0 rgb(216, 216, 216);
+  }
+  to {
+    box-shadow: 0 0 0 10px hsla(0deg, 0%, 100%, 0), 0 0 0 13px hsla(0deg, 0%, 100%, 0);
+  }
+}
+@keyframes pulsation_bouton {
+  from {
+    box-shadow: 0 0 0 -3px hsla(0deg, 0%, 100%, 0), 0 0 0 0 rgb(216, 216, 216);
+  }
+  to {
+    box-shadow: 0 0 0 10px hsla(0deg, 0%, 100%, 0), 0 0 0 13px hsla(0deg, 0%, 100%, 0);
+  }
+}
+.reseaux-btn i {
+  font-size: 30px;
+  color: #2E2A32;
+}
+
 /*------Apparence et fonction de la bar de navigation------*/
 nav ul {
   list-style: none;
@@ -95,7 +135,7 @@ nav ul {
   gap: 40px;
   padding: 0 0;
   /*a disposer autrement plus tard*/
-  margin-top: 56%;
+  margin-top: 30%;
 }
 
 nav ul li a {
@@ -134,11 +174,9 @@ nav ul li a {
 
 .range-boutons {
   display: flex;
-}
-.range-boutons i {
-  font-size: 54px;
-  margin-right: 14px;
-  color: #179DA1;
+  width: 640px;
+  justify-content: space-between;
+  margin-top: 30%;
 }
 
 /*------Taille et grille des sections------*/
