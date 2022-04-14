@@ -1,40 +1,261 @@
-body {
-    background-color: #2E2A32;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
 }
 
-h1 {
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 12%;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+* {
     font-family: 'Raleway', sans-serif;
+}
+body {
+  background-color: #2E2A32;
+}
+
+
+header {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 0 12%;
+  display: flex;
+  h1 {
+    font-family: "Raleway", sans-serif;
     font-size: 5.6em;
     color: #179DA1;
-    text-shadow: 5px 5px #FFA644;
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px #FFA644;
+    line-height: 40%;
+  }
+  h2 {
+    font-family: "Raleway", sans-serif;
     font-size: 25px;
     color: #444047;
     font-weight: 600;
-    margin-top: 8%;
-}
-
-.titre-sous-titre {
-}
-
-header {
-    background-color: #fff;
-    max-width: 100%;
-    padding: 0 15%;
-    display: flex;
+    margin-top: 10%;
+    line-height: 0%;
+  }
 }
 
 section {
+  background-color: #2E2A32;
+}
+
+/*------apparence des boutons------*/
+.boutons {
+    padding: 0.8em 0.8em;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.cta {
+    background-color: #179DA1;
+    border: #179DA1 2px solid;
+    color: #2E2A32;
+}
+.secondaire {
     background-color: #2E2A32;
+    border: #179DA1 2px solid;
+    color: #179DA1;
+    margin-right: 20px;
+}
+.reseaux {
+    background: none;
+    border: none;
+}
+/*------Apparence et fonction de la bar de navigation------*/
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 0;
+    /*a disposer autrement plus tard*/
+    margin-top: 56%;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
-nav {
-    position: fixed;
+
+.navigation {
+  position: fixed;
+  font-size: 25px;
+  z-index: 1;
+  .bnav {
+    transition: opacity 0.25s ease-in-out;
+    &:active {
+      color: #179DA1;
+      font-weight: 700;
+    }
+  }
 }
 
+
+/*------Immage de profil------*/
 .pp {
-    position: absolute;
+  position: absolute;
+  margin: 100px auto auto 63%;
+}/*# sourceMappingURL=style-portfolio.css.map */
+
+/*section 1 de présentation "à propos"*/
+.pres {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    .pres-texte {
+        color: #fff;
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+
+.range-boutons {
+    grid-column: 2/4;
+    max-height: 54px;
+}
+
+/*------Taille et grille des sections------*/
+.section-vide {
+    border: 1px solid #fff;
+
+  color: #fff;
+  max-width: 100%;
+  height: 930px;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px
+}
+
+
+/*-----Organisation du CV------*/
+
+.diplomes {
+    grid-column: 2/4;
+}
+.experience {
+    grid-column: 4/6;
+}
+.logiciels {
+    grid-column: 2/6;
+}
+.languages {
+    grid-column: 2/6;
+}
+.btncv {
+    grid-column: 5/6;
+    max-height: 54px;
+}
+
+.titrescv {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*-----cartels de projets------*/
+
+.projet {
+    max-width: 100%;
+    
+    h3 {
+        font-size: 20px;
+        line-height: 0%;
+        font-weight: 400;
+    }
+
+    
+    .cartel-projet {
+        transition: opacity 0.25s ease-in-out; /*Je sais pas à quoi ça vas servir*/
+        img {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .hover-image {
+            position: relative;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            .details { 
+                display: none;/*a changer pendant le hover*/
+                padding: 0.8em 0.8em;
+                background-color: #179DA1;
+                border-radius: 6px;
+                font-size: 18px;
+                font-weight: 600;
+                color: #2E2A32;
+                border: none;
+    
+                position: absolute;
+                margin: 0 auto;
+                z-index: 1;
+                transform: translate(0,300%);
+            }
+
+        }
+
+    }
+    &:hover {
+        img {
+            filter: blur(1px);
+            transform: scale(1.05);
+            opacity: 40%;
+        }
+        .hover-image {
+            .details {
+                display: flex;
+            }
+        }
+    }
+}
+
+/*------placement des projets dans la grille------*/
+.projet1 {
+    grid-column: 2/4;
+}
+
+.projet2 {
+    grid-column: 4/6;
+}
+
+.projet3 {
+    grid-column: 2/4;
+}
+
+.projet4 {
+    grid-column: 4/6;
+}
+
+
+/*------espace contact------*/
+
+.contact-area{
+    grid-column: 2/5;
+    input, textarea {
+        width: 700px;
+    }
 }
