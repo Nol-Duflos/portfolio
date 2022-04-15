@@ -27,7 +27,7 @@ button {
 .section-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 * {
@@ -158,6 +158,8 @@ nav ul li a {
 .pp {
   position: absolute;
   margin: 100px auto auto 63%;
+  max-width: 800%;
+  max-height: auto;
 }
 
 /*# sourceMappingURL=style-portfolio.css.map */
@@ -187,7 +189,7 @@ nav ul li a {
   height: 930px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 50px;
+  grid-gap: 20px;
 }
 
 /*-----Organisation du CV------*/
@@ -200,38 +202,48 @@ nav ul li a {
 }
 
 .logiciels {
-  grid-column: 2/6;
+  grid-column: 2/5;
 }
 
 .languages {
-  grid-column: 2/6;
+  grid-column: 2/5;
 }
 
 .btncv {
   grid-column: 5/6;
   max-height: 54px;
+  margin-top: 30%;
 }
 
 .titrescv {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 600;
+  line-height: 110%;
 }
 
-.contenu-cv {
-  display: flex;
-  font-size: 18px;
+table {
+  font-size: 16px 0px;
 }
-.contenu-cv .date {
+table td {
+  padding: 10px;
+}
+table .date, table i {
   width: 120px;
   font-weight: 500;
   color: #FF7262;
+  grid-column: 1/2;
 }
-.contenu-cv .date i {
+table i {
   font-size: 12px;
 }
-.contenu-cv .align-right {
+table .boulot {
   text-align: right;
+  grid-column: 3/4;
+}
+
+.range-icon img {
+  margin-right: 30px;
 }
 
 /*-----cartels de projets------*/
@@ -240,7 +252,7 @@ nav ul li a {
 }
 .projet h3 {
   font-size: 20px;
-  line-height: 0%;
+  line-height: auto;
   font-weight: 400;
 }
 .projet .cartel-projet {
