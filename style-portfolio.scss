@@ -22,7 +22,7 @@ button {
 .grid {
     display: grid;
     grid-template-columns: auto;
-    margin: 0 100px;
+    margin: 0 5%;
 }
 
 .section-grid {
@@ -31,9 +31,23 @@ button {
     grid-gap: 10px;
 }
 
+/*------Taille et grille des sections------*/
+.section-vide {
+    /*border: 1px solid #fff;*/
+
+  color: #fff;
+  width: 100%;
+  margin: 40px 0 300px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
 }
+
 body {
   background-color: #2E2A32;
 }
@@ -179,24 +193,13 @@ nav ul li a {
     margin-top: 30%;
 }
 
-/*------Taille et grille des sections------*/
-.section-vide {
-    /*border: 1px solid #fff;*/
-
-  color: #fff;
-  max-width: 100%;
-  height: 800px;
-  
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px
-}
 
 
 /*-----Organisation du CV------*/
 
 .diplomes {
     grid-column: 2/4;
+
 }
 .experience {
     grid-column: 4/6;
