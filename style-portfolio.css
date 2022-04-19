@@ -21,7 +21,7 @@ button {
 .grid {
   display: grid;
   grid-template-columns: auto;
-  margin: 0 12%;
+  margin: 0 100px;
 }
 
 .section-grid {
@@ -157,8 +157,10 @@ nav ul li a {
 /*------Image de profil------*/
 .pp {
   position: absolute;
-  margin: 100px auto auto 63%;
-  max-width: 800%;
+  /*margin: 100px auto auto 63%;*/
+  top: 100px;
+  right: 100px;
+  max-width: 100%;
   max-height: auto;
 }
 
