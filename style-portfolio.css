@@ -27,7 +27,7 @@ button {
 .section-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
 /*------Taille et grille des sections------*/
@@ -37,7 +37,7 @@ button {
   width: 100%;
   margin: 40px 0 300px 0px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
 }
 
@@ -263,8 +263,9 @@ table .boulot {
 }
 .projet .cartel-projet img {
   position: relative;
-  display: inline-block;
+  /*display: inline-block;*/
   max-width: 100%;
+  max-height: auto;
   height: auto;
   transition: all 0.5s;
 }
@@ -306,7 +307,7 @@ table .boulot {
 }
 
 .projet2 {
-  grid-column: 4/6;
+  grid-column: 5/7;
 }
 
 .projet3 {
@@ -314,7 +315,7 @@ table .boulot {
 }
 
 .projet4 {
-  grid-column: 4/6;
+  grid-column: 5/7;
 }
 
 /*------espace contact------*/

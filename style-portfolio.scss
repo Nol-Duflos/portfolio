@@ -28,7 +28,7 @@ button {
 .section-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-gap: 40px;
 }
 
 /*------Taille et grille des sections------*/
@@ -40,7 +40,7 @@ button {
   margin: 40px 0 300px 0px;
   
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
 }
 
@@ -264,8 +264,9 @@ table {
         transition: opacity 0.25s ease-in-out; /*Je sais pas à quoi ça vas servir*/
         img {
             position: relative;
-            display: inline-block;
+            /*display: inline-block;*/
             max-width: 100%;
+            max-height: auto;
             height: auto;
             -webkit-transition: all 0.5s;
             -moz-transition: all 0.5s;
@@ -318,7 +319,7 @@ table {
 }
 
 .projet2 {
-    grid-column: 4/6;
+    grid-column: 5/7;
 }
 
 .projet3 {
@@ -326,7 +327,7 @@ table {
 }
 
 .projet4 {
-    grid-column: 4/6;
+    grid-column: 5/7;
 }
 
 
